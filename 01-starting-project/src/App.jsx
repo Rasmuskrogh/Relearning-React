@@ -11,13 +11,12 @@ function App() {
   let tabContent = "Please click a button";
 
   const handleSelect = (selectedButton) => {
-    // selected button => 'components', 'jsx', 'props', 'state'
     setSelectedTopic(selectedButton);
     console.log(tabContent);
   };
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -69,7 +68,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
