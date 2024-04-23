@@ -1,6 +1,4 @@
-import React from "react";
-
-const UserInput = ({ onChange }) => {
+const UserInput = ({ onChange, userInput }) => {
   return (
     <section id="user-input">
       <div className="input-group">
@@ -18,8 +16,8 @@ const UserInput = ({ onChange }) => {
           <input
             type="number"
             required
-            value={userInput.anualInvestment}
-            onChange={(e) => onChange("anualInvestment", e.target.value)}
+            value={userInput.annualInvestment}
+            onChange={(e) => onChange("annualInvestment", e.target.value)}
           />
         </p>
       </div>
